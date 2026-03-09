@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ── Primary SEO ── -->
-  <title>AI Rewriter — Free Open-Source Text Rewriter for Windows | Ctrl+Space</title>
-  <meta name="description" content="AI Rewriter is a free, open-source Windows desktop tool. Select any text, press Ctrl+Space, and instantly rewrite, fix grammar, or improve tone — no browser needed. Works offline." />
-  <meta name="keywords" content="AI Rewriter, text rewriter, grammar fixer, writing assistant, Windows app, open source, free, offline AI, rewrite text, Ctrl Space, professional tone, AI writing tool" />
+  <title>AI Rewriter — Free AI Text Rewriter for Windows | Ctrl+Space</title>
+  <meta name="description" content="AI Rewriter is a free Windows desktop tool with a Pro version. Select any text, press Ctrl+Space, and instantly rewrite, fix grammar, or improve tone — works 100% offline." />
+  <meta name="keywords" content="AI Rewriter, text rewriter, grammar fixer, writing assistant, Windows app, free trial, offline AI, rewrite text, Ctrl Space, professional tone, AI writing tool" />
   <meta name="author" content="Md Mahadi" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://ai-rewriter.app/" />
@@ -22,8 +22,8 @@
   <!-- ── Open Graph / Facebook ── -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ai-rewriter.app/" />
-  <meta property="og:title" content="AI Rewriter — Free Open-Source Text Rewriter for Windows" />
-  <meta property="og:description" content="Select any text, press Ctrl+Space, and let AI rewrite it instantly. Free, open-source, works offline on Windows 10 & 11." />
+  <meta property="og:title" content="AI Rewriter — Free AI Text Rewriter for Windows" />
+  <meta property="og:description" content="Select any text, press Ctrl+Space, and let AI rewrite it instantly. Free version available, works 100% offline on Windows." />
   <meta property="og:image" content="https://ai-rewriter.app/logo.png" />
   <meta property="og:site_name" content="AI Rewriter" />
   <meta property="og:locale" content="en_US" />
@@ -31,8 +31,8 @@
   <!-- ── Twitter Card ── -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:url" content="https://ai-rewriter.app/" />
-  <meta name="twitter:title" content="AI Rewriter — Free Open-Source Text Rewriter for Windows" />
-  <meta name="twitter:description" content="Select any text, press Ctrl+Space, and let AI rewrite it instantly. Free, open-source, works offline." />
+  <meta name="twitter:title" content="AI Rewriter — Free AI Text Rewriter for Windows" />
+  <meta name="twitter:description" content="Select any text, press Ctrl+Space, and let AI rewrite it instantly. Free version available, works offline." />
   <meta name="twitter:image" content="https://ai-rewriter.app/logo.png" />
 
   <!-- ── Structured Data (JSON-LD) ── -->
@@ -48,13 +48,11 @@
       "price": "0",
       "priceCurrency": "USD"
     },
-    "description": "A free, open-source Windows desktop tool that lets you rewrite, fix grammar, or improve any text instantly with Ctrl+Space. Works offline.",
+    "description": "A free Windows desktop tool that lets you rewrite, fix grammar, or improve any text instantly with Ctrl+Space. Works 100% offline.",
     "author": {
       "@type": "Person",
       "name": "Md Mahadi"
     },
-    "license": "https://opensource.org/licenses/MIT",
-    "isAccessibleForFree": true,
     "image": "https://ai-rewriter.app/logo.png",
     "url": "https://ai-rewriter.app/"
   }
@@ -416,6 +414,27 @@
       .solution .flow-box { flex-direction: column; gap: 0.75rem; }
       .site-footer .inner { flex-direction: column; text-align: center; }
     }
+
+    /* ── Pro Section ── */
+    .pro-card {
+      max-width: 400px; margin: 0 auto;
+      padding: 3rem 2rem; border-radius: 1.5rem;
+      text-align: center; position: relative;
+      background: hsla(263,70%,58%,0.05);
+      border: 1px solid hsla(263,70%,58%,0.3);
+      box-shadow: 0 0 50px -10px hsla(263,70%,58%,0.2);
+    }
+    .pro-card .pricing-badge {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--gradient-primary); color: white;
+      padding: 0.25rem 1rem; border-radius: 9999px;
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+    }
+    .pro-card .price { font-size: 4rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .pro-card .price span { font-size: 1.25rem; color: var(--muted-fg); font-weight: 500; }
+    .pro-card .features-list { text-align: left; margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem; }
+    .pro-card .feature-item { display: flex; align-items: center; gap: 0.75rem; font-size: 1rem; color: var(--fg); }
+    .pro-card .feature-item svg { width: 1.25rem; height: 1.25rem; color: var(--primary); flex-shrink: 0; }
   </style>
 </head>
 <body>
@@ -429,6 +448,7 @@
     </a>
     <div class="links">
       <a href="#features">Features</a>
+      <a href="#pro">Pricing</a>
       <a href="#faq">FAQ</a>
     </div>
     <a href="#download" class="glow-button cta" style="border-radius:0.5rem;">Download</a>
@@ -443,11 +463,11 @@
       <div class="badge-row">
         <img src="logo.png" alt="AI Rewriter" />
         <span class="name">AI Rewriter</span>
-        <span class="os-badge">Open Source</span>
+        <span class="os-badge">Free Trial Available</span>
       </div>
       <h1>Rewrite any text <span class="gradient-text">instantly</span> on Windows.</h1>
       <p class="subtitle">
-        Select text anywhere, press <span class="kbd">Ctrl</span> + <span class="kbd">Space</span>, and let AI rewrite, fix grammar, or improve your writing in seconds.
+        Select text anywhere, press <span class="kbd">Ctrl</span> + <span class="kbd">Space</span>, and let AI rewrite or fix grammar in seconds. <strong>Works 100% Offline.</strong>
       </p>
       <div class="cta-row">
         <a href="#download" class="glow-button cta-primary">
@@ -608,7 +628,7 @@
         <span class="emoji">⚡</span><span class="label">Instant popup rewriting</span>
       </div>
       <div class="feature-card item reveal" style="transition-delay:0.08s; display:flex; align-items:center; gap:1rem;">
-        <span class="emoji">🔒</span><span class="label">Works locally on your computer</span>
+        <span class="emoji">🌐</span><span class="label">Works 100% Offline (Massive!)</span>
       </div>
       <div class="feature-card item reveal" style="transition-delay:0.16s; display:flex; align-items:center; gap:1rem;">
         <span class="emoji">🧠</span><span class="label">Smart AI rewriting</span>
@@ -618,6 +638,48 @@
       </div>
       <div class="feature-card item reveal" style="transition-delay:0.32s; display:flex; align-items:center; gap:1rem;">
         <span class="emoji">🌍</span><span class="label">Multi-language support</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ PRO VERSION ════════ -->
+<section id="pro" class="section-padding">
+  <div class="container">
+    <h2 class="section-heading reveal">Get the <span class="gradient-text">Pro Version</span></h2>
+    <div class="reveal-scale">
+      <div class="pro-card glass-strong gradient-border">
+        <div class="pricing-badge">Unlimited Access</div>
+        <div class="price">$19<span> / lifetime</span></div>
+        <p style="color:var(--muted-fg); margin-bottom: 2rem;">Unlock the full potential of AI Rewriter</p>
+        
+        <div class="features-list">
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Unlimited Usage No Limit
+          </div>
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Advanced AI Pro Functions
+          </div>
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Priority Model Processing
+          </div>
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Lifetime Updates & Support
+          </div>
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Commercial Usage License
+          </div>
+        </div>
+
+        <a href="https://buy.stripe.com/5kQ4gz7yV4Zi4vafzSds407" target="_blank" class="glow-button" style="width: 100%; justify-content: center; padding: 1rem; border-radius: 0.75rem; font-size: 1.125rem;">
+          Get Pro Access Now
+        </a>
+        <p style="font-size: 0.75rem; color: var(--muted-fg); margin-top: 1rem;">Secure payment via Stripe</p>
       </div>
     </div>
   </div>
@@ -634,7 +696,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download for Windows
       </a>
-      <p class="note">Free download. Works offline.</p>
+      <p class="note">Free version forever. Massive offline power.</p>
     </div>
   </div>
 </section>
@@ -663,7 +725,7 @@
           Is AI Rewriter free to use?
           <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
-        <div class="faq-answer">AI Rewriter is completely free and open source. You can use all features without any subscription or limits.</div>
+        <div class="faq-answer">Yes, you can use the free version forever for basic rewriting and grammar fixing. We also offer a 3-day free trial of our Pro features. For power users who need advanced functions and priority processing, the Pro version is available for a one-time fee.</div>
       </div>
     </div>
   </div>
@@ -674,7 +736,7 @@
   <div class="container inner">
     <div class="brand">
       <img src="logo.png" alt="AI Rewriter" />
-      <span>© 2025 AI Rewriter · Open Source · Built by Md Mahadi</span>
+      <span>© 2025 AI Rewriter · Built by Md Mahadi</span>
     </div>
     <a href="https://buy.stripe.com/dRm14naL70J25ze9buds408" target="_blank" rel="noopener noreferrer" class="donation-link">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
